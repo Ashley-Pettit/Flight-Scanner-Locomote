@@ -1,4 +1,4 @@
-##Flight-Scanner (Locomote)
+#Flight-Scanner (Locomote)
 
 ####ABOUT
 
@@ -11,7 +11,8 @@ At the bottom there are the requirements of this coding challenge.
 4. Ensure you have at least v2.2.2 of ruby installed. You can check by running ruby -v in your terminal/console. Ruby can be downloaded at https://www.ruby-lang.org/en/downloads/
 5. With ruby installed navigate to the downloaded unzipped file with your terminal.
 6. Run 'bundle install' to install dependancies.
-6. Once in the folder type ruby run.rb and the program will run
+7. Once in the folder type 'rails s' and the api will run
+8. You can now open the front-end. Simply open 'index.html' with any browser
 
 ####FOCUS ON SOLID DESIGN PRINCIPALS
 
@@ -47,9 +48,10 @@ Create a search form with three fields:
 - To location (eg: Heathrow)
 - Travel date (eg: 2016-09-02)
 - When the user clicks search, your front end code needs to make an AJAX request to a small backend server you will build, which will in turn contact the Flight API.
+
 ````
 
-#Usability
+####Usability
 
 Flights may be cheaper on some days than others;
 
@@ -61,7 +63,7 @@ Hint - A great way to present all five days of results would be by using tabs.
 You don't need to present all information returned by the flight search. Show what you think is relevant to the user.
 
 ```
-#Important
+Important
 
 - Don't use any frameworks like React, Angular or similar.
 You may however use utility libraries like jQuery, lodash & moment.js.
@@ -76,7 +78,7 @@ Build a back end server which has three endpoints:
 - /airlines
 Lists all available airlines from the Flight API.
 
- - /airports
+- /airports
 Lists all matching airports from the Flight API.
 
 - /search
