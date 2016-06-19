@@ -1,11 +1,10 @@
-####Flight-Scanner (Locomote)
+##Flight-Scanner (Locomote)
 
-##ABOUT
+####ABOUT
 
+At the bottom there are the requirements of this coding challenge.
 
-At the bottom of this readme is the requirements of this coding task.
-
-##HOW TO RUN
+####HOW TO RUN
 
 1. Download this repo by clicking the download as zip button
 2. Unzip the file
@@ -14,8 +13,7 @@ At the bottom of this readme is the requirements of this coding task.
 6. Run 'bundle install' to install dependancies.
 6. Once in the folder type ruby run.rb and the program will run
 
-
-##FOCUS ON SOLID DESIGN PRINCIPALS
+####FOCUS ON SOLID DESIGN PRINCIPALS
 
 Where possible this solution attempts to demonstrate
 
@@ -30,11 +28,11 @@ Where possible this solution attempts to demonstrate
 
 Main tools used for this project are:
 
-Ruby, Rails, JavaScript, JQuery
+Ruby, Rails, Rspec, JavaScript, JQuery, AJAX,
 
 I haven't used CoffeeScript as I haven't yet learnt it however, I don't think it would take me long
 
-## TASK REQUIREMENTS
+#### TASK REQUIREMENTS
 
 JS code task
 
@@ -62,13 +60,14 @@ Hint - A great way to present all five days of results would be by using tabs.
 
 You don't need to present all information returned by the flight search. Show what you think is relevant to the user.
 
+```
 #Important
 
 - Don't use any frameworks like React, Angular or similar.
 You may however use utility libraries like jQuery, lodash & moment.js.
 
 We use coffeescript, however you can also use plain javascript or typescript.
-
+```
 
 ####Back end (part 2)
 
@@ -89,21 +88,24 @@ For a single flight search, you will need to make multiple Flight API requests:
 /flight_search/:airline_code to search for flights for each airline
 The list of airlines may change, so caching is not an option.
 
+```
 #Important
 Stick to small frameworks like expressjs, koa, sinatra, flask, goji or similar.
 We use node.js, however you're free to use ruby, python, golang, or similar.
+```
 
-Flight API (provided)
+#Flight API (provided)
 
 Please use our Flight API to complete this task.
 
 It has three endpoints:
 
-airlines
+/airlines
 Provides a list of airlines. Takes no parameters.
 The airline codes from the response is required for the flight search.
 Example request: airlines
-airports
+
+/airports
 Provides an airport search.
 Query parameters:
 q - text based search param
@@ -111,14 +113,17 @@ The airportCode from the response is required for the flight search.
 Example request: airports?q=Melbourne
 flight_search/:airline_code
 Provides a list of airlines.
+
 URL parameters:
 airline_code - airline code from the airlines endpoint
+
 Query parameters:
 date departure date, YYYY-MM-DD
 from origin airport code, eg: SYD
 to destination airport code, eg: JFK
 
 Example request: flight_search/QF?date=2016-09-02&from=SYD&to=JFK
+
 Expectations
 
 Documentation is not necessary; try to write self documenting code & document only where required.
