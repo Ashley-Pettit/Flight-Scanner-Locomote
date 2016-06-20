@@ -1,0 +1,29 @@
+
+#container-fluid {
+  margin-left: 3rem;
+}
+
+input, label, h3, .btn {
+  margin-bottom:1rem;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+td {
+  color:blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#results_flights {
+  width:90%;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.fa {
+  margin-top:8rem;
+  margin-right:2rem;
+}
