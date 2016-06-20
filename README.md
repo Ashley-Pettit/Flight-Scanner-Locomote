@@ -14,11 +14,16 @@ At the bottom there are the requirements of this coding challenge.
 7. Once in the folder type 'rails s' and the api will run
 8. You can now open the front-end. Simply open 'index.html' with any browser
 
+####ASSUMPTIONS
+
+1. It is assumed that the API does not need authentication as there is no ability to delete flights, airlines etc. It may be desired to protect unauthorised use of the api however, this was deemed 'out of scope'
+
+
 ####FOCUS ON SOLID DESIGN PRINCIPALS
 
 Where possible this solution attempts to demonstrate
 
-- Small isolated functions and classes with single responsibility '
+- Small isolated functions and classes with single responsibility
 - Ruby best practices around coding structure
 - DRY code with minimal repetition.
 - Good user experience
@@ -109,10 +114,14 @@ Example request: airlines
 
 /airports
 Provides an airport search.
+
 Query parameters:
 q - text based search param
+
 The airportCode from the response is required for the flight search.
 Example request: airports?q=Melbourne
+
+
 flight_search/:airline_code
 Provides a list of airlines.
 

@@ -15,15 +15,6 @@
   <!-- Time picked (For Icons)-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker.css">
 
-  <!-- Moment.js -->
-  <script src='scripts/moment.js' type='text/javascript'></script>\
-  <!-- JQuery CDN - JavaScript is down here for faster page load -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Bootstrap JavaScript -->
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' type='text/javascript'></script>
-  <!-- Custom JavaScript -->
-  <script src='scripts/flight-scanner.js' type='text/javascript'></script>
-
 </head>
 <body>
 
@@ -45,7 +36,7 @@
       <input id="input_destination" placeholder="E.g. Hearthrow"/><BR />
 
       <label>When do you plan on travelling?</label><BR />
-      <input type="date" id="input_date" value="2016-07-18"></input> <button class="btn btn-default btn-sm btn-info" id="time_now_btn" type="button">I'm travelling today </button><BR />
+      <input type="date" id="input_date" value="2016-07-18"></input> <button class="btn btn-default btn-sm btn-info" id="time_now_btn" type="button" style="margin-bottom:.3rem">I'm travelling today </button><BR />
 
       <button class="btn btn-primary btn-lg" id="flight_search_btn" type="button">Search Flights </button>
 
@@ -66,47 +57,62 @@
         </thead>
         <tbody>
           <tr>
-            <td>Quantas - 10:30 - $130 </td>
-            <td>Quantas - 11:30 - $130 </td>
-            <td class ="info">Quantas - 12:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
+            <td>Qantas - 10:30 - $130 </td>
+            <td>Qantas - 11:30 - $130 </td>
+            <td class ="info">Qantas - 12:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
           </tr>
           <tr>
-            <td>Quantas - 10:30 - $130 </td>
-            <td>Quantas - 11:30 - $130 </td>
-            <td class ="info">Quantas - 12:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
+            <td>Qantas - 10:30 - $130 </td>
+            <td>Qantas - 11:30 - $130 </td>
+            <td class ="info">Qantas - 12:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
           </tr>
           <tr>
-            <td>Quantas - 10:30 - $130 </td>
-            <td>Quantas - 11:30 - $130 </td>
-            <td class ="info">Quantas - 12:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
+            <td>Qantas - 10:30 - $130 </td>
+            <td>Qantas - 11:30 - $130 </td>
+            <td class ="info">Qantas - 12:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
           </tr>
           <tr>
-            <td>Quantas - 10:30 - $130 </td>
-            <td>Quantas - 11:30 - $130 </td>
-            <td class ="info">Quantas - 12:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
+            <td>Qantas - 10:30 - $130 </td>
+            <td>Qantas - 11:30 - $130 </td>
+            <td class ="info">Qantas - 12:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
           </tr>
           <tr>
-            <td>Quantas - 10:30 - $130 </td>
-            <td>Quantas - 11:30 - $130 </td>
-            <td class ="info">Quantas - 12:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
-            <td>Quantas - 5:30 - $130 </td>
+            <td>Qantas - 10:30 - $130 </td>
+            <td>Qantas - 11:30 - $130 </td>
+            <td class ="info">Qantas - 12:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
+            <td>Qantas - 5:30 - $130 </td>
           </tr>
         </tbody>
       </table>
 
     </div>
 
+    <button class="btn btn-primary btn-lg" id="airline_search_btn" type="button">Display Partner Airlines </button>
+    <button class="btn btn-primary btn-lg" id="airport_search_btn" type="button">Display Airports </button>
+
+    <div id="airline_results"></div>
+    <div id="airport_results"></div>
+
   </div>    <!-- end container -->
 
+
+  <!-- Moment.js -->
+  <script src='scripts/moment.js' type='text/javascript'></script>\
+  <!-- JQuery CDN - JavaScript is down here for faster page load -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' type='text/javascript'></script>
+  <!-- Custom JavaScript -->
+  <script src='scripts/flight-scanner.js' type='text/javascript'></script>
 
 </body>
 
